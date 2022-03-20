@@ -40,10 +40,11 @@ body{
     margin-bottom: 25px;
 }
 
-.card-body h4{
+.card-body h2{
     text-align: center;
     color: hsl(224, 23%, 55%);
     margin-bottom: 25px;
+    font-size: 16px;
 }
 
 
@@ -76,6 +77,7 @@ body{
 .card-plan a:hover{
     color: hsla(251, 76%, 56%, 0.74);
     text-decoration: none;
+    transition: color .5s;
 }
 .plan-1{
     color: hsl(223, 47%, 23%);
@@ -107,6 +109,7 @@ body{
 
 .card-option .btn:hover{
     background: hsla(251, 76%, 56%, 0.74);
+    transition: background .5s;
 }
 
 .card-option a{
@@ -117,6 +120,7 @@ body{
 
 .card-option a:hover{
     color: hsl(223, 47%, 23%);
+    transition: color .5s;
 }
 
 /*Footer*/
