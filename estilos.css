@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 331px;
+    height: 590px;
+    margin:70px auto;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px hsla(245, 75%, 52%, 0.144);
+}
+
+.container .card-img img{
+    width: 331px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-body{
+    padding: 0 25px;
+}
+
+.card-body h1{
+    margin-top: 30px;
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 25px;
+}
+
+.card-body h4{
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 25px;
+}
+
+
+.card-plan{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+
+.card-plan .card-icon{
+    grid-column: 1/2;
+    justify-self: center;
+}
+
+.card-plan .plan{
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+.card-plan a{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-top: 12px;
+    justify-self: center;
+    color: hsl(245, 75%, 52%);
+}
+
+.card-plan a:hover{
+    color: hsla(251, 76%, 56%, 0.74);
+    text-decoration: none;
+}
+.plan-1{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.precio{
+    color: hsl(224, 23%, 55%);
+}
+
+.card-option{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-option .btn{
+    margin: auto;
+    width: 280px;
+    height: 51px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 15px;
+    background: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    box-shadow: 0px 10px 10px hsla(245, 75%, 52%, 0.288);
+}
+
+.card-option .btn:hover{
+    background: hsla(251, 76%, 56%, 0.74);
+}
+
+.card-option a{
+    margin: auto;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.card-option a:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+/*Footer*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 800px){
+    body{
+        background: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .container{
+        width: 451px;
+        height: 660px;
+    }
+
+    .container .card-img img{
+        width: 451px;
+    }
+
+    .card-body{
+        padding: 0 40px;
+    }
+
+    .card-option .btn{
+        width: 354px;
+    }
+
+}
